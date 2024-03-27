@@ -1,40 +1,128 @@
 <html>
-    <head>
-        <title>QR page </title>
-        <body>
-            <h1>ther are defination of array:</h1>
-            <h2> defination</h2>
-            <h3>array is collection od data which have same data type</h3>
-            <h3>array use to store multiple value widh same data type</h3>
 
-            <h3>static array</h3>
-            <h4>  The size of a static array is fixed at compile time. Memory for a static array is allocated on the stack or in the data segment of the program.
-                Dynamic Array: The size of a dynamic array can be determined and changed at runtime. Memory for a dynamic array is allocated on the heap.
-                Size Flexibility:
-                </h4>
-            <h3>dynamic arraay</h3>
-            <h4>The size of a dynamic array can be determined and changed at runtime. Memory for a dynamic array is allocated on the heap.
-                Size Flexibility:
-                </h4>
-                <p>Static Array: Once defined, the size of a static array cannot be changed during program execution.
-                    Dynamic Array: Dynamic arrays can grow or shrink in size dynamically during runtime by reallocating memory as needed.
-                    Access and Efficiency:
-                    
-                    Static Array: Accessing elements in a static array is generally faster because elements are stored in contiguous memory locations.
-                    Dynamic Array: Accessing elements in a dynamic array might be slightly slower due to potential indirection through pointers and memory allocation overhead.
-                    Usage and Flexibility:
-                    
-                    Static Array: Suitable for situations where the size of the array is known at compile time and does not change frequently.
-                    Dynamic Array: Ideal for situations where the size of the array is unknown at compile time or needs to change dynamically during program execution.
-                    Initialization and Destruction:
-                    
-                    Static Array: Initialization typically happens at compile time or runtime, and destruction occurs automatically when the array goes out of scope.
-                    Dynamic Array: Initialization and destruction are managed explicitly by the programmer using functions like malloc, calloc, realloc, and free.
-                    Error Handling:
-                    
-                    Static Array: Errors related to size limitations (e.g., buffer overflow) might occur at compile time or runtime.
-                    Dynamic Array: Errors such as out-of-memory conditions can occur during runtime when attempting to resize or allocate memory.
-                    In summary, static arrays are fixed in size and allocated at compile time, while dynamic arrays can change in size at runtime and are allocated on the heap. Dynamic arrays provide more flexibility but require manual memory management and might incur slightly more overhead compared to static arrays.</p>
-        </body>
-    </head>
+<head>
+    <link rel="stylesheet" href="PROJECT.CSS">
+    <title>QR page </title>
+
+<body>
+    <header>
+        <div class="head">
+
+            <h1> Array</h1>
+
+        </div>
+    </header>
+    <br>
+    <div class="def">
+        <h2> Defination:</h2>
+        <h3>array is collection of data which have same data type</h3>
+        <h3>array use to store multiple value widh same data type</h3>
+    </div>
+    </div>
+    <div class="type1">
+        <h2>types of array:</h2>
+
+        <h4>One-dimensional array: Also called a vector, it is the simplest form of an array where elements are
+            stored in a single row or column. Elements are accessed using a single index.</h4>
+        <p>#include <stdio.h>
+                <br>
+
+                int main() {
+                <br>
+                int arr[5]; // Declaration of a one-dimensional array of integers with size 5
+                <br>
+                // Assigning values to array elements
+                <br>
+                arr[0] = 10;<br>
+                arr[1] = 20;<br>
+
+                // Accessing and printing array elements
+                <br>
+                for (int i = 0; i < 5; i++) { <br>
+                    printf("arr[%d] = %d\n", i, arr[i]); <br>
+                    }
+
+                    <br>
+                    return 0;
+                    }</p>
+    </div>
+    <div class="type2">
+        <h4>Two-dimensional array: Also known as a matrix, it is an array of arrays where elements are arranged
+            in rows and columns. Elements are accessed using two indices: one for the row and one for the
+            column.</h4>
+        <p>#include <stdio.h>br
+
+                int main() {<br>
+                int matrix[3][3]; // Declaration of a two-dimensional array of integers with size 3x3
+                <br>
+                // Assigning values to array elements
+                for (int i = 0; i < 3; i++) {<br>
+                    for (int j = 0; j < 3; j++) {<br>
+                        matrix[i][j] = i + j;<br>
+                        } <br>
+                        }
+
+                        // Accessing and printing array elements
+                        for (int i = 0; i < 3; i++) { <br>
+                            for (int j = 0; j < 3; j++ { <br>
+                                printf("matrix[%d][%d] = %d\n", i, j, matrix[i][j]); <br>
+                                } <br>
+                                }
+                                <br>
+                                return 0;
+                                }</p>
+    </div>
+    <div class="type3">
+        <h4>Multi-dimensional array: This refers to arrays with more than two dimensions. Each additional
+            dimension adds another level of depth. Accessing elements in multi-dimensional arrays requires
+            specifying multiple indices.</h4>
+        <p>#include <stdio.h>
+
+                int main() { <br>
+                int threeDArray[2][3][4]; // Declaration of a three-dimensional array of integers with size
+                2x3x4 <br>
+
+                // Assigning values to array elements
+                for (int i = 0; i < 2; i++) {<br>
+                    for (int j = 0; j < 3; j++) {<br>
+                        for (int k = 0; k < 4; k++) {<br>
+                            threeDArray[i][j][k] = i + j + k;<br>
+                            } <br>
+                            } <br>
+                            }
+                            <br>
+                            // Accessing and printing array elements
+                            <br>
+                            for (int i = 0; i < 2; i++) { <br>
+                                for (int j = 0; j < 3; j++) { <br>
+                                    for (int k = 0; k < 4; k++) { <br>
+                                        printf("threeDArray[%d][%d][%d] = %d\n", i, j, k, threeDArray[i][j][k]);
+                                        <br>
+                                        } <br>
+                                        } <br>
+                                        }
+                                        <br>
+
+                                        return 0;
+                                        }</p>
+    </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <h5>thanks for visiting my site </h5>
+            <div class="contactus">
+                <p>follow us:</p>
+                <ul>
+                    <li><a href="https://github.com/zeeshan91kharadi">our git-hub profilr</a></li>
+                    <li><a href="https://www.instagram.com/zeeshan__shaikh_1?utm_source=qr&igsh=MWJpc3lrdnQycmp3dg==">our
+                            instagram profilr</a></li>
+                    <li><a href="https://gokuluniversity.ac.in/">our coolege profilr</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</head>
+
 </html>
